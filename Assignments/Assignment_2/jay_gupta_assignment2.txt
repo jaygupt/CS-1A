@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+Source: 
+public class cylinder_volume {
+   public static void main(String[] args) {
+      // * compute volume of a cylinder *
+
+      // set variables
+      final double PI = 3.14;
+
+      // first, read in height and radius
+      Scanner input = new Scanner(System.in);
+
+      System.out.print("What is the height of the cylinder? ");
+      double h = input.nextDouble();
+
+      System.out.print("What is the radius of the cylinder? ");
+      double r = input.nextDouble();
+
+      // compute volume
+      double V = PI * r * r * h;
+
+      // print output
+      System.out.println("\nThe volume of the cylinder is " + V);
+   }
+}
+
+Trial Run 1: 
+What is the height of the cylinder? 5
+What is the radius of the cylinder? 2.4
+
+The volume of the cylinder is 90.43199999999999
+
+Trial Run 2: 
+What is the height of the cylinder? 17.234
+What is the radius of the cylinder? 1.2342
+
+The volume of the cylinder is 82.4302886886864

@@ -1,0 +1,14 @@
+A queue is a data type in Java. It is different from stacks, in that stacks retrieve the
+last item put in first, also known as LIFO (last in, first out). A queue, on the other 
+hand, retrieves the first item put in it, which is known as FIFO (first in, first out). 
+
+A queue, like an array, can hold any data type, and is usually meant to process the data 
+later, in some way. It is very similar to stacks, in that it offers methods to 
+remove an item (pop for stacks, poll for queues), add an item (push, or add), 
+or to see the next item in the list (element, or peek).
+
+A real-life example is a supermarket-queue, where you take your groceries and pay for them: 
+the first person in line gets checked out first, followed by the next person in line, etc. One
+can't just skip to the front of a line, and get checked out first; the order goes first person, first 
+out, second person, second person out, etc. This is similar to how queues work in 
+Java: the first element inserted gets handled first. 

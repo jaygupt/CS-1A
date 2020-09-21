@@ -1,0 +1,34 @@
+Source Code: 
+
+import java.util.Scanner;
+import java.lang.StringBuilder; 
+
+public class Question_Two {
+   public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      StringBuilder builder = new StringBuilder();
+
+      System.out.print("Please type in the integer: ");
+      int user_num = input.nextInt();
+
+      for (int i = 1; i <= 1; i++) {
+         builder.append(user_num);
+      }
+
+      String result = builder.toString();
+      System.out.println("The number: " + result + "'s type is: "
+              + result.getClass().getSimpleName());
+   }
+}
+
+Output: 
+
+Example 1: 
+
+Please type in the integer: 123456
+The number: 123456's type is: String
+
+Example 2: 
+
+Please type in the integer: 2342983
+The number: 2342983's type is: String

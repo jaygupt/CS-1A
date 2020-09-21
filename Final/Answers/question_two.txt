@@ -1,0 +1,59 @@
+An ArrayList is basically an array, but with added functionality. It is part
+of the java.util package, and implements the 'List' interface. ArrayLists are more 
+dynamic than arrays, in that their size can be changed, even after intialization. 
+
+Arrays, once initialized, are fixed in length. However, with an Arraylist, 
+a developer can add/remove elements and their size changes automatically. Furthermore, 
+ArrayLists allow all elements, including null values. ArrayLists are comparable 
+to vectors in C++. 
+   
+The Syntax for ArrayLists is also different: 
+
+One imports 'java.util.ArrayList;', and declaration and initialization looks like: 
+
+ArrayList<Type> name = new ArrayList<Type>(); 
+
+Following is a use of ArrayList: 
+
+Source Code: 
+
+import java.util.ArrayList;
+
+public class ArrayListTest {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<String>();
+        colors.add("Red");
+        colors.add("Yellow");
+        colors.add("Green");
+        colors.add("Blue");
+        colors.add("Orange");
+
+        System.out.println(colors);
+
+        colors.remove("Yellow");
+        colors.remove(0);
+
+        System.out.println(colors);
+        System.out.println(colors.get(2));
+
+        colors.set(0, "Purple");
+        System.out.println(colors);
+
+        System.out.println(colors.size());
+    }
+}
+
+Output: 
+
+[Red, Yellow, Green, Blue, Orange]
+[Green, Blue, Orange]
+Orange
+[Purple, Blue, Orange]
+3
+
+Explanation: 
+
+The code above uses ArrayList's feature of adding and removing elements; 
+some colors are added, and later, removed. Furthermore, one can perform the same functionality
+as they would with Arrays, just with different method calls. For instance, one can view the size
+of the ArrayList, or set a certain index value. 

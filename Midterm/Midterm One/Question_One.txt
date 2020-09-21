@@ -1,0 +1,53 @@
+1 a) Post increment operation
+
+Example: 
+
+Source Code: 
+public class Main{
+     public static void main(String []args){
+        int number1 = 3; 
+        int number2 = 5; 
+        
+        System.out.println("number1 is equal to: " + number1++); 
+        System.out.println("number2 is equal to: " + number2++); 
+        
+        System.out.println("\nnumber1 is NOW equal to: " + number1); 
+        System.out.println("number2 is NOW equal to: " + number2); 
+     }
+}
+
+Output: 
+number1 is equal to: 3
+number2 is equal to: 5
+
+number1 is NOW equal to: 4
+number2 is NOW equal to: 6
+
+As we see in the example, number1 and number2 are initially set to 3 and 5, respectively. The first
+print statements print them out, with the post increment operator, but it prints their initial values, 
+and after, increments them by 1. That is why, in the next set of print statements, we see their values incremented
+by 1. 
+
+b) Pre decrement operation
+
+Example: 
+
+Source Code: 
+public class Main{
+     public static void main(String []args){
+        int number1 = 3; 
+        int number2 = 5; 
+        
+        System.out.println("number1 is equal to: " + --number1); 
+        System.out.println("number2 is equal to: " + --number2); 
+     }
+}
+
+Output: 
+number1 is equal to: 2
+number2 is equal to: 4
+
+As we see in the example, number1 and number2 are initially set to 3 and 5, respectively. The 
+print statements print them out with the pre decrement operators, and it first decreases each by 1, and then prints
+them out. These values are immediately returned, unlike the post increment operators, which return the values
+only after the print statements were executed. 

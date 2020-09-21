@@ -1,0 +1,59 @@
+1) The difference between the do-while and while loop is in the order by 
+which the condition is tested in. In the while loop, the condition is 
+tested at the beginning. If the condition is true, the statements in the 
+loop are tested. 
+This is in stark contrast to do-while: the condition is tested at the end 
+of the loop. This allows for the statements to be executed at least once, 
+even if the condition isn't met. 
+
+Example (while) (Source Code): 
+
+public class Question_One {
+   public static void main(String[] args) {
+      int num = 0;
+
+      while (num < 5) {
+         System.out.println("The number is: " + num);
+         num++;
+      }
+   }
+}
+
+Example (Output): 
+
+The number is: 0
+The number is: 1
+The number is: 2
+The number is: 3
+The number is: 4
+
+Example (Explanation): 
+
+Here we have a while loop that checks if 'num' is less than 5. If it 
+is, it prints out the number, and increments num by 1. When num becomes 
+5, 5 is not less than 5, and the condition fails. That is why it stops
+at 4. 
+
+Example (do-while) (Source Code): 
+
+public class Question_One {
+   public static void main(String[] args) {
+      int num = 0;
+
+      do {
+         System.out.println("The number is: " + num);
+         num++;
+      } while (num > 5); 
+   }
+}
+
+Example (Output): 
+
+The number is: 0
+
+Example (Explanation): 
+
+In this example, num is set to 0, and a do-while is used. The 
+statements are executed once, and since 1 is not greater than 5, 
+the do-while loop breaks. If this were a while loop (while (num > 5))
+the statements would have never run, not even once. 
